@@ -8,7 +8,7 @@ A simple discord challenge, you need to verify with the reaction bot, then run `
 
 ### Alternative solve
 
-[Rarmony](pwn/Rarmony), our CTF chat platform challenge, also had its own version of the discord flag, in the `general` channel. To get this flag, follow the below steps:
+Rarmony, our CTF chat platform challenge, also had its own version of the discord flag, in the `general` channel. To get this flag, follow the below steps:
 ```
 ➜  ~ nc 193.57.159.27 28514
 Harmony: Chat for CTFers
