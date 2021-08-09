@@ -1,0 +1,4 @@
+<html>
+<title><templ>"Page Title".to_string()</templ></title>
+<h1><templ>"bruh".to_string()</templ></h1>
+</html>

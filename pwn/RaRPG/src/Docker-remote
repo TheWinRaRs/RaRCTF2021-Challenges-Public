@@ -1,0 +1,7 @@
+FROM ubuntu:20.04
+RUN apt update && apt install -y cmake libprotobuf-dev libenet-dev libncurses-dev
+COPY build/server /
+COPY levels/ /levels/
+WORKDIR /
+EXPOSE 1337/udp
+CMD ["/server"]

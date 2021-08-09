@@ -1,0 +1,32 @@
+syntax = "proto2";
+
+package consolegame;
+
+message PlayerPos {
+  required int32 x = 1;
+  required int32 y = 2;
+}
+
+message LevelRequest {
+  required int32 id = 1;
+  required bool is_start = 2;
+}
+
+message Level {
+  message Door {
+    required int32 x = 1;
+    required int32 y = 2;
+    required int32 id = 3;
+  }
+  required string LevelData = 1;
+  optional PlayerPos start_pos = 2;
+  repeated Door doors = 3;
+}
+
+message Request {
+  optional LevelRequest lReq = 1;
+}
+
+message Response {
+  optional Level level = 1;
+}

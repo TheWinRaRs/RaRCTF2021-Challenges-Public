@@ -1,0 +1,8 @@
+headers/
+frames/
+loader
+xor
+.gdb_history
+*.enc
+filesystem.h
+flag1.h

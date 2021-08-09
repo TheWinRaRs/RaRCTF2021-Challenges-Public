@@ -1,0 +1,5 @@
+$the_cow = << "EOC";
+  $thoughts
+    $thoughts
+rarctf{C0w_s4y_m00_p1g_s4y_01nk_fl4g_s4y-251e363a}
+EOC

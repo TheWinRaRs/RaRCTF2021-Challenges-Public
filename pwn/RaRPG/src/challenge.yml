@@ -1,0 +1,17 @@
+name: "RaRPG"
+shortname: "rpg"
+description: ""
+category: "Rev"
+difficulty: "Easy"
+points: 200
+authors:
+  - clubby789
+flag_type: "strict"
+flag: "rarctf{g4m3_h4ck1ng_f0r_n00b5!-75f8b0}"
+
+publish:
+  download:
+    - "client.exe"
+
+solve: ""
+build: ""
