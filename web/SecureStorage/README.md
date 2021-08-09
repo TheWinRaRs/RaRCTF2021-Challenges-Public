@@ -4,7 +4,7 @@ Secure Storage was a "hard" web challenge that I wrote for RaRCTF 2021. Truth be
 
 I was aware of two solutions during the CTF, one was the intended `document.domain` bypass trick, and another was an unintended CSP bypass since I only enabled CSP on the enclave's main page.
 
-![](https://z3.is/f/Q22f)
+![](https://i.imgur.com/r7UD9Ie.png)
 
 ### Overview
 
@@ -12,7 +12,7 @@ You're given the source code, and access to two websites.
 
 You login/register to the secure storage website, and you're given access to a page which looks like this:
 
-![](https://z3.is/f/ILpx)
+![](https://i.imgur.com/IrQlC1s.png)
 
 where you can change your safely stored message and its style. This storage works by sending messages to the secure enclave site, which is really where your messages are stored. This was done so a compromise of `https://securestorage.rars.win` shouldn't really affect `https://secureenclave.rars.win`, but obviously there was a vuln somewhere which lets players get the flag.
 
@@ -195,7 +195,7 @@ Here's my payload below:
 
 On viewing this page, a form is created with our malicious XSS in the user, and they are forced to open it in a new tab. The script exfiltrates `window.frames[0].document.body.innerText`, which should give us the flag!
 
-![](https://z3.is/f/4Cbn)
+![](https://i.imgur.com/aC0CZlb.png)
 
 > rarctf{js_god?_the_wh0le_1nternet_1s_y0ur_d0main!!!_60739238}
 
@@ -231,6 +231,6 @@ In retrospect, I'm kinda glad that there was this unintended solution as well. I
 
 In general, people seem to have liked the challenge, since, (at the time of me writing this), it has 100% positive votes. I'm glad that people enjoyed it, and that players that I talked to, whether they had solved it or not, seemed to have learned a lot in the process.
 
-Hopefully you enjoyed the challenge and learned something too! Special thanks to the RaRCTF team for hosting a great CTF, and *cough* make sure to check our [corCTF](https://ctf.cor.team/) if you want to see more of my web challenges, ranging from easy to insane.
+Hopefully you enjoyed the challenge and learned something too! Special thanks to the RaRCTF team for hosting a great CTF, and *cough* make sure to check out [corCTF](https://ctf.cor.team/) if you want to see more of my web challenges, ranging from easy to insane.
 
 Thanks for reading!
