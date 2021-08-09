@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ViewSwitcher
+        android:id="@+id/viewswitcher"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#ff0000"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView0"
+                android:layout_width="329dp"
+                android:layout_height="288dp"
+                android:layout_marginTop="-50dp"
+                app:srcCompat="@drawable/red_cross" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="269dp"
+                android:layout_height="68dp"
+                android:text="Error, wrong username or password"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/button_orig"
+                android:layout_width="210dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="100dp"
+                android:text="Would you like to retry?"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+
+    </ViewSwitcher>
+
+</LinearLayout>

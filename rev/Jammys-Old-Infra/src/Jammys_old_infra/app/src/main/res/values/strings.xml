@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Jammys Old Infra</string>
+    <string name="red_bkg_msg">Error, wrong username or password</string>
+    <string name="err_retry_btn">Would you like to retry?</string>
+</resources>
