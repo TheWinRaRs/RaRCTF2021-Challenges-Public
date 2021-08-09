@@ -52,5 +52,6 @@ Description                     : if you see this, DM jammy#0402 on discord secr
 Most of this is irrelevant, but the author (me!) left a note in the description of the metadata, stating ` if you see this, DM jammy#0402 on discord secret_stego for a special role!` If you DMd jammy#0402, you would have received the Rabbithole Enthusiast role on the RaRCTF discord. Congrats to the below people for actually finding this:
 
 - yardenohana#0558
+- AmIAHuman#0001
 
 #### Flag: rarctf{Welcome_To_RaRCTF!}
