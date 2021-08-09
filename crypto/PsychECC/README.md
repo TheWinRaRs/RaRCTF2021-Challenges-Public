@@ -1,0 +1,3 @@
+# PsychECC
+## Crypto
+### Flag: rarctf{w0ah_str4ight_cl41r0v0y4nc3!!_8119733d69}
